@@ -1,140 +1,6 @@
 Creating a well-organized project tree structure is essential for maintaining clarity and efficiency as you develop your "Career Craft" resume builder application. Below is a suggested project tree structure along with a development plan to guide you through the implementation process.
 
-### Project Tree Structure
-
-Here’s a proposed directory structure for your project:
-
-career-craft/
-│
-├── backend/                     # Back-end application
-│   ├── src/                     # Source code
-│   │   ├── app/                 # Main application logic
-│   │   │   ├── models/          # Database models
-│   │   │   │   ├── user.py      # User model
-│   │   │   │   ├── resume.py    # Resume model
-│   │   │   │   └── template.py  # Template model
-│   │   │   ├── routes/          # API routes
-│   │   │   │   ├── auth.py      # Authentication routes
-│   │   │   │   ├── user.py      # User profile routes
-│   │   │   │   ├── resume.py    # Resume management routes
-│   │   │   │   └── admin.py     # Admin panel routes
-│   │   │   ├── controllers/     # Business logic
-│   │   │   │   ├── authController.py  # Authentication logic
-│   │   │   │   ├── userController.py  # User profile logic
-│   │   │   │   ├── resumeController.py # Resume logic
-│   │   │   │   └── adminController.py  # Admin logic
-│   │   │   └── services/        # Service layer for business logic
-│   │   │       ├── authService.py      # Authentication services
-│   │   │       ├── userService.py      # User services
-│   │   │       ├── resumeService.py    # Resume services
-│   │   │       └── adminService.py     # Admin services
-│   │   │
-│   │   ├── config/              # Configuration files
-│   │   │   ├── database.py      # Database connection settings
-│   │   │   └── settings.py       # Application settings
-│   │   │
-│   │   └── tests/               # Test source code
-│   │       ├── unit/            # Unit tests
-│   │       └── integration/      # Integration tests
-│   │
-│   ├── requirements.txt          # Python dependencies
-│   ├── Dockerfile                # Dockerfile for containerization
-│   └── docker-compose.yml        # Docker Compose file for multi-container applications
-│
-├── frontend/                    # Front-end application
-│   ├── public/                  # Public assets (index.html, favicon, etc.)
-│   ├── src/                     # Source files
-│   │   ├── components/          # Reusable React components
-│   │   │   ├── Auth/            # Authentication components (Login, Register)
-│   │   │   ├── Dashboard/        # Dashboard components
-│   │   │   ├── Resume/          # Resume components (Builder, Preview)
-│   │   │   ├── Templates/       # Template selection components
-│   │   │   ├── Feedback/         # Feedback components
-│   │   │   └── JobBoard/        # Job board integration components
-│   │   │
-│   │   ├── pages/               # Page components
-│   │   │   ├── Home.js          # Home page
-│   │   │   ├── UserProfile.js    # User profile page
-│   │   │   ├── ResumeBuilder.js  # Resume builder page
-│   │   │   └── AdminPanel.js     # Admin panel page
-│   │   │
-│   │   ├── services/            # API service functions
-│   │   │   ├── authService.js    # Authentication API calls
-│   │   │   ├── userService.js    # User profile API calls
-│   │   │   ├── resumeService.js  # Resume API calls
-│   │   │   └── adminService.js   # Admin API calls
-│   │   │
-│   │   ├── styles/              # CSS or styled-components
-│   │   ├── App.js               # Main application component
-│   │   └── index.js             # Entry point for React
-│   │
-│   ├── tests/                   # Test source code
-│   │   ├── user/                # User-related tests
-│   │   ├── resume/              # Resume-related tests
-│   │   ├── feedback/            # Feedback-related tests
-│   │   └── admin/               # Admin-related tests
-│   │
-│   ├── package.json             # Node.js dependencies and scripts
-│   └── .env                     # Environment variables (e.g., API URL)
-│
-├── .gitignore                   # Git ignore file
-└── README.md                    # Project documentation
-
-### Development Plan
-
-Here’s a step-by-step development plan to guide you through building the application:
-
-#### Phase 1: Setup and Initial Configuration
-1. **Initialize Repositories:**
-   - Create a Git repository for version control.
-   - Set up the project structure as outlined above.
-
-2. **Set Up Back-End:**
-   - Choose a Python framework (Flask or Django) and set up the back-end environment.
-   - Install necessary dependencies (Flask, Flask-SQLAlchemy, Flask-JWT-Extended, etc. or Django and its packages).
-   - Create the initial configuration file and database models.
-
-3. **Set Up Front-End:**
-   - Use Create React App to initialize the front-end.
-   - Install necessary dependencies (React Router, Axios for API calls, etc.).
-
-#### Phase 2: Core Functionality Development
-4. **User  Authentication:**
-   - Implement user registration and login functionality in the back-end.
-   - Create API endpoints for authentication.
-   - Develop the front-end components for registration and login.
-
-5. **Resume Management:**
-   - Create API endpoints for creating, reading, updating, and deleting resumes.
-   - Develop the front-end components for the resume builder, including forms for inputting resume data.
-
-6. **User  Dashboard:**
-   - Implement the user dashboard to display created resumes.
-   - Add functionality to edit and delete resumes.
-
-7. **Feedback Mechanism (Optional):**
-   - If implementing feedback, create API endpoints for submitting and retrieving feedback.
-   - Develop front-end components for displaying and submitting feedback.
-
-#### Phase 3: Testing and Refinement
-8. **Testing:**
-   - Write unit tests for back-end functionality (authentication, resume management).
-   - Write tests for front-end components and API integration.
-   - Ensure that all tests pass and fix any issues.
-
-9. **User  Interface Refinement:**
-   - Improve the UI/UX based on feedback or personal review.
-   - Ensure responsiveness and accessibility.
-
-#### Phase 4: Deployment
-10. **Prepare for Deployment:**
-    - Set up environment variables for production.
-    - Choose a hosting platform (e.g., Heroku, AWS, Vercel) for the back-end and front-end.
-
-11. **Deploy the Application:**
-    - Deploy the back-end API and front
-
-budil a application which is about resume builder and To structure a project tree for scalable production applications using React, MySQL, and Python, focus on modular organization, separation of concerns, and clear directory hierarchies. This ensures maintainability, scalability, and ease of collaboration across teams. ### Project Tree Structure for "Career Craft"
+build a application which is about resume builder and To structure a project tree for scalable production applications using React, MySQL, and Python, focus on modular organization, separation of concerns, and clear directory hierarchies. This ensures maintainability, scalability, and ease of collaboration across teams. ### Project Tree Structure for "Career Craft"
 Key Features of the Structure
 
 Modular Organization:
@@ -164,78 +30,89 @@ Docker support is integrated with a Dockerfile and docker-compose.yml, facilitat
 This structure is designed to support the scalability and maintainability of the "Career Craft" project, ensuring that as the application grows, it remains organized and easy to navigate.
 Here’s a proposed directory structure for your project:
 
-career-craft/
-│
-├── backend/                     # Back-end application
-│   ├── src/                     # Source code
-│   │   ├── app/                 # Main application logic
-│   │   │   ├── models/          # Database models
-│   │   │   │   ├── user.py      # User model
-│   │   │   │   ├── resume.py    # Resume model
-│   │   │   │   └── template.py  # Template model
-│   │   │   ├── routes/          # API routes
-│   │   │   │   ├── auth.py      # Authentication routes
-│   │   │   │   ├── user.py      # User profile routes
-│   │   │   │   ├── resume.py    # Resume management routes
-│   │   │   │   └── admin.py     # Admin panel routes
-│   │   │   ├── controllers/     # Business logic
-│   │   │   │   ├── authController.py  # Authentication logic
-│   │   │   │   ├── userController.py  # User profile logic
-│   │   │   │   ├── resumeController.py # Resume logic
-│   │   │   │   └── adminController.py  # Admin logic
-│   │   │   └── services/        # Service layer for business logic
-│   │   │       ├── authService.py      # Authentication services
-│   │   │       ├── userService.py      # User services
-│   │   │       ├── resumeService.py    # Resume services
-│   │   │       └── adminService.py     # Admin services
-│   │   │
-│   │   ├── config/              # Configuration files
-│   │   │   ├── database.py      # Database connection settings
-│   │   │   └── settings.py       # Application settings
-│   │   │
-│   │   └── tests/               # Test source code
-│   │       ├── unit/            # Unit tests
-│   │       └── integration/      # Integration tests
-│   │
-│   ├── requirements.txt          # Python dependencies
-│   ├── Dockerfile                # Dockerfile for containerization
-│   └── docker-compose.yml        # Docker Compose file for multi-container applications
-│
-├── frontend/                    # Front-end application
-│   ├── public/                  # Public assets (index.html, favicon, etc.)
-│   ├── src/                     # Source files
-│   │   ├── components/          # Reusable React components
-│   │   │   ├── Auth/            # Authentication components (Login, Register)
-│   │   │   ├── Dashboard/        # Dashboard components
-│   │   │   ├── Resume/          # Resume components (Builder, Preview)
-│   │   │   ├── Templates/       # Template selection components
-│   │   │   ├── Feedback/         # Feedback components
-│   │   │   └── JobBoard/        # Job board integration components
-│   │   │
-│   │   ├── pages/               # Page components
-│   │   │   ├── Home.js          # Home page
-│   │   │   ├── UserProfile.js    # User profile page
-│   │   │   ├── ResumeBuilder.js  # Resume builder page
-│   │   │   └── AdminPanel.js     # Admin panel page
-│   │   │
-│   │   ├── services/            # API service functions
-│   │   │   ├── authService.js    # Authentication API calls
-│   │   │   ├── userService.js    # User profile API calls
-│   │   │   ├── resumeService.js  # Resume API calls
-│   │   │   └── adminService.js   # Admin API calls
-│   │   │
-│   │   ├── styles/              # CSS or styled-components
-│   │   ├── App.js               # Main application component
-│   │   └── index.js             # Entry point for React
-│   │
-│   ├── tests/                   # Test source code
-│   │   ├── user/                # User-related tests
-│   │   ├── resume/              # Resume-related tests
-│   │   ├── feedback/            # Feedback-related tests
-│   │   └── admin/               # Admin-related tests
-│   │
-│   ├── package.json             # Node.js dependencies and scripts
-│   └── .env                     # Environment variables (e.g., API URL)
-│
-├── .gitignore                   # Git ignore file
-└── README.md                    # Project documentation
+```
+career-craft
+├─ .git
+│  ├─ COMMIT_EDITMSG
+│  ├─ HEAD
+│  ├─ config
+│  ├─ description
+│  ├─ hooks
+│  │  ├─ applypatch-msg.sample
+│  │  ├─ commit-msg.sample
+│  │  ├─ fsmonitor-watchman.sample
+│  │  ├─ post-update.sample
+│  │  ├─ pre-applypatch.sample
+│  │  ├─ pre-commit.sample
+│  │  ├─ pre-merge-commit.sample
+│  │  ├─ pre-push.sample
+│  │  ├─ pre-rebase.sample
+│  │  ├─ pre-receive.sample
+│  │  ├─ prepare-commit-msg.sample
+│  │  ├─ push-to-checkout.sample
+│  │  └─ update.sample
+│  ├─ index
+│  ├─ info
+│  │  └─ exclude
+│  ├─ logs
+│  │  ├─ HEAD
+│  │  └─ refs
+│  │     ├─ heads
+│  │     │  ├─ main
+│  │     │  └─ secondCommit
+│  │     └─ remotes
+│  │        └─ origin
+│  │           ├─ main
+│  │           └─ secondCommit
+│  ├─ objects
+│  │  ├─ info
+│  │  └─ pack
+│  └─ refs
+│     ├─ heads
+│     │  ├─ main
+│     │  └─ secondCommit
+│     ├─ remotes
+│     │  └─ origin
+│     │     ├─ main
+│     │     └─ secondCommit
+│     └─ tags
+├─ .gitignore
+├─ README.md
+├─ backend
+│  ├─ Dockerfile
+│  ├─ app.py
+│  ├─ config
+│  │  └─ settings.py
+│  ├─ controllers
+│  │  └─ __init__.py
+│  ├─ models
+│  │  └─ __init__.py
+│  ├─ requirements.txt
+│  ├─ routes
+│  │  └─ __init__.py
+│  ├─ services
+│  │  └─ __init__.py
+│  └─ tests
+│     └─ test_sample.py
+├─ docker-compose.yml
+├─ frontend
+│  ├─ .gitignore
+│  ├─ Dockerfile
+│  ├─ README.md
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ App.jsx
+│  │  ├─ assets
+│  │  │  └─ react.svg
+│  │  ├─ index.css
+│  │  └─ main.jsx
+│  └─ vite.config.js
+└─ requirements.txt
+
+```
